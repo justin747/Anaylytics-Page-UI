@@ -14,6 +14,7 @@
 		3BC3FF0226F7A27400D08A12 /* Anaylytics_Page_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3FF0126F7A27400D08A12 /* Anaylytics_Page_UITests.swift */; };
 		3BC3FF0C26F7A27400D08A12 /* Anaylytics_Page_UIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3FF0B26F7A27400D08A12 /* Anaylytics_Page_UIUITests.swift */; };
 		3BC3FF0E26F7A27400D08A12 /* Anaylytics_Page_UIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3FF0D26F7A27400D08A12 /* Anaylytics_Page_UIUITestsLaunchTests.swift */; };
+		3BC3FF1F26F8279200D08A12 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3FF1E26F8279200D08A12 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		3BC3FF0726F7A27400D08A12 /* Anaylytics Page UIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anaylytics Page UIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC3FF0B26F7A27400D08A12 /* Anaylytics_Page_UIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anaylytics_Page_UIUITests.swift; sourceTree = "<group>"; };
 		3BC3FF0D26F7A27400D08A12 /* Anaylytics_Page_UIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anaylytics_Page_UIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BC3FF1E26F8279200D08A12 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,8 @@
 		3BC3FEEF26F7A27200D08A12 /* Anaylytics Page UI */ = {
 			isa = PBXGroup;
 			children = (
+				3BC3FF1B26F8277900D08A12 /* Model */,
+				3BC3FF1A26F8277100D08A12 /* View */,
 				3BC3FEF026F7A27200D08A12 /* Anaylytics_Page_UIApp.swift */,
 				3BC3FEF226F7A27200D08A12 /* ContentView.swift */,
 				3BC3FEF426F7A27300D08A12 /* Assets.xcassets */,
@@ -125,6 +129,21 @@
 				3BC3FF0D26F7A27400D08A12 /* Anaylytics_Page_UIUITestsLaunchTests.swift */,
 			);
 			path = "Anaylytics Page UIUITests";
+			sourceTree = "<group>";
+		};
+		3BC3FF1A26F8277100D08A12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BC3FF1E26F8279200D08A12 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BC3FF1B26F8277900D08A12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BC3FEF326F7A27200D08A12 /* ContentView.swift in Sources */,
+				3BC3FF1F26F8279200D08A12 /* Home.swift in Sources */,
 				3BC3FEF126F7A27200D08A12 /* Anaylytics_Page_UIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
