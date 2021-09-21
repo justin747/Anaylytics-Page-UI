@@ -34,6 +34,8 @@ struct Home: View {
             .padding()
             .foregroundColor(.blue)
             
+            //MARK: - Balance View
+            
             VStack(spacing: 10) {
                 Text("Total Balance")
                     .fontWeight(.bold)
@@ -41,6 +43,31 @@ struct Home: View {
                 Text("$51,200")
                     .font(.system(size: 38, weight: .bold))
             }
+            .padding(.top, 20)
+            
+            Button {
+                
+            } label: {
+                HStack(spacing: 5) {
+                    
+                    Text("Income")
+                    
+                    Image(systemName: "chevron.down")
+                }
+                .font(.caption.bold())
+                .padding(.vertical, 10)
+                .padding(.horizontal, 10)
+                .background(.white, in: Capsule())
+                .foregroundColor(.black)
+                .shadow(color: .black.opacity(0.05), radius: 5, x: 5, y: 5)
+                .shadow(color: .black.opacity(0.03), radius: 5, x: -5, y: -5)
+                
+            }
+            
+            //MARK: - Graph View
+            
+            LineGraph()
+            
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
