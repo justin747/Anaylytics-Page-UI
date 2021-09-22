@@ -43,7 +43,7 @@ struct Home: View {
                 Text("$51,200")
                     .font(.system(size: 38, weight: .bold))
             }
-            .padding(.top, 20)
+            .padding(.top, 15)
             
             Button {
                 
