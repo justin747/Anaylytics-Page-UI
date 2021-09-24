@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct LineGraph: View {
+    var data: [CGFloat]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            
+        }
     }
 }
 
 struct LineGraph_Previews: PreviewProvider {
     static var previews: some View {
-        LineGraph()
+        ContentView()
     }
 }
