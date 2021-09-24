@@ -66,7 +66,7 @@ struct Home: View {
             
             //MARK: - Graph View
             
-            LineGraph(data: <#T##[CGFloat]#>)
+            LineGraph(data: 5.0)
             
             
         }
