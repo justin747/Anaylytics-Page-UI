@@ -10,8 +10,11 @@ import SwiftUI
 struct LineGraph: View {
     var data: [CGFloat]
     var body: some View {
-        ZStack {
+        GeometryReader { proxy in
             
+            ZStack {
+                
+            }
         }
     }
 }

@@ -66,7 +66,7 @@ struct Home: View {
             
             //MARK: - Graph View
             
-            LineGraph(data: 5.0)
+            LineGraph(data: samplePlot)
             
             
         }
@@ -80,3 +80,10 @@ struct Home_Previews: PreviewProvider {
         Home()
     }
 }
+
+
+let samplePlot: [CGFloat] = [
+
+    989,1200,750,790,650,950,1200,600,500,600,890,1203,1400,900,1250,
+1600,1200
+]
