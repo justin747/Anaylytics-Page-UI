@@ -67,6 +67,8 @@ struct Home: View {
             //MARK: - Graph View
             
             LineGraph(data: samplePlot)
+                .frame(height: 220)
+                .padding(.top, 25)
             
             
         }
