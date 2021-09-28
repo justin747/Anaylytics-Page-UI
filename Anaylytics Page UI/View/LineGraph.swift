@@ -50,7 +50,7 @@ struct LineGraph: View {
                     ], startPoint: .leading, endPoint: .trailing)
                 
                 )
-                .
+                
                 
             }
         }
