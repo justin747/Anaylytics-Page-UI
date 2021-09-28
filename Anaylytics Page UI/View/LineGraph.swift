@@ -15,7 +15,7 @@ struct LineGraph: View {
             ZStack {
                 
                 let height = proxy.size.height
-                let width = (proxy.size.width) / CGFloat(data.count)
+                let width = (proxy.size.width) / CGFloat(data.count - 1)
                 
                 let maxPoint = (data.max() ?? 0) + 100
                 
@@ -50,9 +50,11 @@ struct LineGraph: View {
                     ], startPoint: .leading, endPoint: .trailing)
                 
                 )
+                .
                 
             }
         }
+        .padding(.horizontal, 10)
     }
 }
 
