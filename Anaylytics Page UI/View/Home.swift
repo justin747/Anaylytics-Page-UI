@@ -70,10 +70,41 @@ struct Home: View {
                 .frame(height: 220)
                 .padding(.top, 25)
             
+            Text("Shortcuts")
+                .font(.title2.bold())
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .padding(.top)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                
+                HStack(spacing: 20) {
+                    
+                }
+            }
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Color("BG"))
+    }
+    
+    @ViewBuilder
+    func CardView(image: String, title: String, price: String, color: Color) {
+        
+        VStack(spacing: 15) {
+            
+            Image(image)
+                .resizable()
+                .renderingMode(.template)
+                .aspectRatio(contentMode: .fit)
+                .foregroundColor(.white)
+                .frame(width: 35, height: 35)
+                .padding()
+                .background(color, in: Circle())
+            
+            Text(title)
+        }
+        
     }
 }
 
