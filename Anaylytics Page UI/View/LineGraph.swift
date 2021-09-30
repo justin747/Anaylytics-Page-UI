@@ -95,7 +95,7 @@ struct LineGraph: View {
                     
                     Circle()
                         .fill(Color("Gradient1"))
-                        .frame(width: 1, height: 22)
+                        .frame(width: 22, height: 22)
                         .overlay(
                             
                             Circle()
