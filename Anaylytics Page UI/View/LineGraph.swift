@@ -67,6 +67,7 @@ struct LineGraph: View {
                         }
                     
                     )
+                    .padding(.top, 12)
             }
         }
         .padding(.horizontal, 10)
