@@ -51,10 +51,43 @@ struct LineGraph: View {
                 
                 )
                 
+                FillBackground()
                 
+                    .clipShape(
+                    
+                        Path { path in
+                            
+                            path.move(to: CGPoint(x: 0, y: 0))
+                            
+                            path.addLines(points)
+                            
+                            path.addLine(to: CGPoint(x: proxy.size.width, y: height))
+                            
+                            path.addLine(to: CGPoint(x: 0, y: height))
+                        }
+                    
+                    )
             }
         }
         .padding(.horizontal, 10)
+    }
+    
+    @ViewBuilder
+    func FillBackground() -> some View {
+        
+        LinearGradient(colors: [
+        
+            Color("Gradient2")
+                .opacity(0.3),
+            Color("Gradient2")
+                .opacity(0.2),
+            Color("Gradient2")
+                .opacity(0.1)]
+            + Array(repeating: Color("Gradient1")
+                .opacity(0.1), count: 4)
+            + Array(repeating:
+                Color.clear, count: 2)
+            , startPoint: .top, endPoint: .bottom)
     }
 }
 
