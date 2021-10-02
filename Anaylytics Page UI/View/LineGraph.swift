@@ -105,7 +105,7 @@ struct LineGraph: View {
                     
                     Rectangle()
                         .fill(Color("Gradient1"))
-                        .frame(width: 1, height: 45)
+                        .frame(width: 1, height: 50)
                 }
                     .frame(width: 80, height: 170)
                     .offset(y: 70)
@@ -119,7 +119,7 @@ struct LineGraph: View {
                 
                 withAnimation{showPlot = true}
                 
-                let translation = value.location.x - 40
+                let translation = value.location.x - 20
                 
                 let index = max(min(Int((translation / width).rounded() + 1), data.count - 1), 0)
                 
